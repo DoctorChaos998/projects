@@ -1,0 +1,56 @@
+.container{
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  width: 100%;
+  backdrop-filter: blur(4px);
+  z-index: 3;
+}
+.modalWindow{
+  position: relative;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  background-color: #424242;
+  border-radius: 10px;
+  align-items: center;
+}
+.input{
+  height: 40px;
+  outline: none;
+  width: 100%;
+  border: none;
+  background-color: #424242;
+  border-bottom: rgba(63,251,205,1) 3px solid;
+color: white;
+
+  &::placeholder{
+    color: rgba(white, 0.5);
+  }
+}
+.button{
+  outline: none;
+  margin-top: 10px;
+  height: 20px;
+  width: 50%;
+  color: rgba(63,251,205,1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: solid rgba(63,251,205,1) 2px;
+  background-color: transparent;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+  &:hover{
+    background-color: rgba(63,251,205,1);
+    color: black;
+  }
+}

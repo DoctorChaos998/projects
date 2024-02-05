@@ -1,0 +1,21 @@
+.button{
+  height: 50px;
+  width: 300px;
+  border-radius: 10px;
+  background-color: rgba(white, 0.2);
+  outline: none;
+  margin-top: 30px;
+  transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  font-size: 1.5em;
+  border: none;
+  color: white;
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover{
+    background-color: #9e4efc;
+    box-shadow: 0 0 10px 5px #9e4efc;
+  }
+}

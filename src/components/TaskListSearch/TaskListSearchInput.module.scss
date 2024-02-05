@@ -1,0 +1,26 @@
+.input{
+  border: none;
+  outline: none;
+  color: rgba(158,78,252,1);
+  background: transparent;
+  margin-right: 5px;
+
+  &::placeholder{
+    color: rgba(158,78,252,0.5);
+  }
+}
+.container{
+  padding: 0 10px;
+  height: 40px;
+  border-bottom: rgba(158,78,252,1) solid 2px;
+  display: flex;
+  align-items: center;
+  transition: border-bottom-color 0.2s ease-in-out;
+
+  &:focus-within{
+    border-bottom: rgba(63,251,205,1) solid 2px;
+  }
+}
+.icon{
+  color: rgba(158,78,252,1);
+}
